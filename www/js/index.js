@@ -25,7 +25,7 @@ function fillDB()
 	 initDB("appointment");
 	 navigator.notification.alert("BD created with Succes!");
 }
-function initDB(entity , viewId)
+function initDB(entity )
 {
   entityName = entity ;
   console.log("Appel initdb");
