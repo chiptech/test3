@@ -25,7 +25,7 @@ function fillDB()
 	 initDB("appointment");
 	 navigator.notification.alert("BD created with Succes!");
 }
-function initDB(entity )
+function initDB(entity)
 {
   entityName = entity ;
   console.log("Appel initdb");
@@ -39,9 +39,8 @@ function initDB(entity )
             dataType:'json',
             crossDomain: true,
             success: function(data) {
-			   
+			     console.log("Appel Ajax avec succes");
 				donnees = JSON.stringify(data.GetRecordsResult);
-				console.log("Appel Ajax avec succes");
 				alert(donnees);
 				store();
             },
