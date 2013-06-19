@@ -40,6 +40,7 @@ function initDB(entity)
             crossDomain: true,
             success: function(data) {
 			     console.log("Appel Ajax avec succes");
+				 alert(data);
 				donnees = JSON.stringify(data.GetRecordsResult);
 				alert(donnees);
 				store();
